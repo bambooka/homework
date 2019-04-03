@@ -25,7 +25,7 @@
         android:text="@string/event_date"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="10dp"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
     />
 
     <TextView
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="10dp"
         android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@id/eventTime" />
+        app:layout_constraintTop_toBottomOf="@id/eventTime"
     />
 
     <TextView
@@ -59,7 +59,7 @@
         android:layout_margin="10dp"
         android:background="@android:color/holo_blue_bright"
         android:padding="5dp"
-        app:layout_constraintTop_toBottomOf="@id/eventLocation" />
+        app:layout_constraintTop_toBottomOf="@id/eventLocation"
     />
 
 

@@ -7,12 +7,33 @@
     tools:context=".ThemesListActivity">
 
     <TextView
+        android:id="@+id/evenTheme_1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-
-
-        android:text="ta daaa"
+        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/eventTime" />
+        android:text="@string/event_theme"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/evenTheme_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/event_theme"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/evenTheme_1" />
+
+    <TextView
+        android:id="@+id/evenTheme_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/event_theme"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/evenTheme_2" />
 
 </android.support.constraint.ConstraintLayout>
