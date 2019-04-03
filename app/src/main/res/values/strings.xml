@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">About_Dart</string>
+    <string name="app_name">About Dart</string>
     <string name="event_time">16:35</string>
     <string name="event_date">27 November</string>
     <string name="event_theme">Dart: второе пришествие</string>
