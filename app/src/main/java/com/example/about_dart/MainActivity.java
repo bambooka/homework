@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,10 +22,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView aboutSpeaker = findViewById(R.id.speaker);
+        aboutSpeaker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAboutSpeakerActivity();
+            }
+        });
+
     }
 
+    // open topic list
     private void openThemesListActivity() {
         Intent openThemesListActivity = new Intent(this, ThemesListActivity.class);
         startActivity(openThemesListActivity);
+    }
+
+    // open info about speaker
+    private void openAboutSpeakerActivity() {
+        Intent openAboutSpeakerActivity = new Intent(this, About_Speaker.class);
+        startActivity(openAboutSpeakerActivity);
     }
 }

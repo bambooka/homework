@@ -1,109 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/eventTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/event_time"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="10dp" />
-
-        />
-
-    <TextView
-        android:id="@+id/eventDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/event_date"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="10dp"
-        app:layout_constraintTop_toTopOf="parent"
-    />
-
-    <TextView
-        android:id="@+id/evenTheme"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/event_theme"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="10dp"
-        android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@id/eventTime"
-    />
-
-    <TextView
-        android:id="@+id/eventLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/event_location"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="10dp"
-        android:background="@android:color/holo_red_light"
-        android:padding="5dp"
-        app:layout_constraintTop_toBottomOf="@id/evenTheme" />
-
-    <TextView
-        android:id="@+id/sphere"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sphere"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="10dp"
-        android:background="@android:color/holo_blue_bright"
-        android:padding="5dp"
-        app:layout_constraintTop_toBottomOf="@id/eventLocation"
-    />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
-    <TextView
-        android:id="@+id/speaker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/speaker"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sphere"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:textColor="@android:color/holo_purple" />
-        />
+        <TextView
+            android:id="@+id/eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/event_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/workplace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/workplace"
-        app:layout_constraintStart_toEndOf="@id/speaker"
-        app:layout_constraintTop_toBottomOf="@id/sphere"
-        android:layout_margin="10dp"
-        android:padding="5dp" />
-        />
 
-    <TextView
-        android:id="@+id/annotation"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/annotation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/speaker"
-        android:layout_margin="10dp" />
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/event_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        />
+        <TextView
+            android:id="@+id/evenTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/event_theme"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventTime" />
 
-    <Button
-        android:id="@+id/themesList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/topicList"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="10dp"
-        android:background="@android:color/holo_orange_dark"
-        app:layout_constraintTop_toBottomOf="@id/annotation" />
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/eventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_red_light"
+            android:padding="5dp"
+            android:text="@string/event_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/evenTheme" />
+
+        <TextView
+            android:id="@+id/sphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_blue_bright"
+            android:padding="5dp"
+            android:text="@string/sphere"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventLocation" />
+
+
+        <TextView
+            android:id="@+id/speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/speaker"
+            android:textColor="@android:color/holo_purple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sphere" />
+
+        <TextView
+            android:id="@+id/workplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/workplace"
+            app:layout_constraintStart_toEndOf="@id/speaker"
+            app:layout_constraintTop_toBottomOf="@id/sphere" />
+
+        <TextView
+            android:id="@+id/annotation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/annotation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/speaker" />
+
+
+        <Button
+            android:id="@+id/themesList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="@string/topicList"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/annotation" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
