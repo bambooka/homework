@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TopicFontSize">40sp</dimen>
+    <dimen name="paddingText">10sp</dimen>
+    <dimen name="layoutMargin">15sp</dimen>
+    <dimen name="marginText">5sp</dimen>
+    <dimen name="weightText">400</dimen>
+</resources>
