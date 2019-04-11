@@ -7,51 +7,107 @@
     android:layout_margin="@dimen/layoutMargin"
     tools:context=".About_Speaker">
 
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/EvgenyKot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/position"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/workplace"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/position" />
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/speaker"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="@dimen/paddingText"-->
+    <!--android:paddingRight="@dimen/paddingText"-->
+    <!--android:text="@string/speaker"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/sphere"-->
+    <!--android:textSize="@dimen/defaultFontSize"-->
+    <!--android:layout_marginTop="@dimen/marginText"-->
+    <!--/>-->
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_speaker"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingTop="@dimen/paddingText"
+        android:paddingBottom="@dimen/paddingText"
+        android:textSize="@dimen/defaultFontSize"
+        app:layout_constraintTop_toBottomOf="@+id/avatar"
+
+        />
+
     <TextView
         android:id="@+id/eventTopic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/paddingText"
         android:text="@string/event_theme"
         android:textSize="@dimen/TopicFontSize"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio"
 
         />
+
+    <TextView
+        android:id="@+id/eventLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="@string/event_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventTopic" />
 
     <TextView
         android:id="@+id/sphere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_red_light"
-        android:padding="@dimen/paddingText"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="5dp"
         android:text="@string/sphere"
-        android:textColor="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/eventTopic" />
+        app:layout_constraintTop_toBottomOf="@id/eventLocation" />
 
     <TextView
-        android:id="@+id/speaker"
+        android:id="@+id/eventTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/paddingText"
-        android:text="@string/speaker"
+        android:layout_margin="10dp"
+        android:text="@string/event_time"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sphere"
+        app:layout_constraintTop_toBottomOf="@id/sphere" />
 
-
-        />
 
     <TextView
-        android:layout_width="fill_parent"
+        android:id="@+id/eventDate"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/paddingText"
-        android:text="@string/about_speaker"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/speaker"
-
-        />
-
+        android:layout_margin="10dp"
+        android:text="@string/event_date"
+        app:layout_constraintStart_toEndOf="@id/eventTime"
+        app:layout_constraintTop_toBottomOf="@id/sphere" />
 
 </android.support.constraint.ConstraintLayout>

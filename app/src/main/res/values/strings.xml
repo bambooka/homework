@@ -11,4 +11,5 @@
     <string name="topicList">Topic list</string>
     <string name="margin">10dp</string>
     <string name="about_speaker">Начинал с C++ и железяк, потом переключился на .Net и C#. Работал много где, но как-то так получилось, что работая в Dell пришлось заниматься CoffeeScript и фронтендом ¯\_(ツ)_/¯. Сейчас работаю во Wrike, высоконагруженном SAAS приложении с очень богатым клиентским кодом, который мы пишем на Dart и Angular. Участник программного комитета HolyJS, спикер. Google Developer Expert.</string>
+    <string name="position">Teamlead</string>
 </resources>
